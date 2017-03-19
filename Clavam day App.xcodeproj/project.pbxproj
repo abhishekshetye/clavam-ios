@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25C2B0923FE86A8F18848489 /* Pods_Clavam_day_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CE9329AA1CA07E17B130ED /* Pods_Clavam_day_AppUITests.framework */; };
+		466F74AB1E7B077600D768E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F74A91E7B077600D768E7 /* AVFoundation.framework */; };
+		466F74AC1E7B077600D768E7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F74AA1E7B077600D768E7 /* AVKit.framework */; };
+		46B6ECEB1E7B973600458C4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46B6ECEA1E7B973600458C4B /* GoogleService-Info.plist */; };
+		46C86CDB1E7CE87B00B33042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C86CDA1E7CE87B00B33042 /* LoginViewController.swift */; };
+		46C86CDC1E7CEB3400B33042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C86CDA1E7CE87B00B33042 /* LoginViewController.swift */; };
 		46EF0C681E7517340021BCF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF0C671E7517340021BCF2 /* AppDelegate.swift */; };
 		46EF0C6A1E7517340021BCF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF0C691E7517340021BCF2 /* ViewController.swift */; };
 		46EF0C6D1E7517340021BCF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C6B1E7517340021BCF2 /* Main.storyboard */; };
@@ -15,6 +21,14 @@
 		46EF0C751E7517340021BCF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C731E7517340021BCF2 /* LaunchScreen.storyboard */; };
 		46EF0C801E7517340021BCF2 /* Clavam_day_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF0C7F1E7517340021BCF2 /* Clavam_day_AppTests.swift */; };
 		46EF0C8B1E7517340021BCF2 /* Clavam_day_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF0C8A1E7517340021BCF2 /* Clavam_day_AppUITests.swift */; };
+		46EF0C9D1E75181C0021BCF2 /* clavamday.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C981E75181C0021BCF2 /* clavamday.png */; };
+		46EF0C9E1E75181C0021BCF2 /* celebrate.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C991E75181C0021BCF2 /* celebrate.png */; };
+		46EF0C9F1E75181C0021BCF2 /* bgtop.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C9A1E75181C0021BCF2 /* bgtop.png */; };
+		46EF0CA01E75181C0021BCF2 /* bgbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C9B1E75181C0021BCF2 /* bgbottom.png */; };
+		46EF0CA11E75181C0021BCF2 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EF0C9C1E75181C0021BCF2 /* app.png */; };
+		46EF0CA41E7522860021BCF2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF0CA31E7522860021BCF2 /* CollectionViewController.swift */; };
+		80D420386857DBA00907CE46 /* Pods_Clavam_day_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAC6D931937C60B58A7BCD2 /* Pods_Clavam_day_App.framework */; };
+		DA64FB11FFC77299D7AC0A73 /* Pods_Clavam_day_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F5A8D74D106FC1D91EC8B /* Pods_Clavam_day_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07CE9329AA1CA07E17B130ED /* Pods_Clavam_day_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clavam_day_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		298958F486CBF57C03D41950 /* Pods-Clavam day AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day AppUITests/Pods-Clavam day AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EAC6D931937C60B58A7BCD2 /* Pods_Clavam_day_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clavam_day_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		466F74A91E7B077600D768E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		466F74AA1E7B077600D768E7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		46B6ECEA1E7B973600458C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46C86CDA1E7CE87B00B33042 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46EF0C641E7517340021BCF2 /* Clavam day App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clavam day App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EF0C671E7517340021BCF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46EF0C691E7517340021BCF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +70,18 @@
 		46EF0C861E7517340021BCF2 /* Clavam day AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clavam day AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EF0C8A1E7517340021BCF2 /* Clavam_day_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clavam_day_AppUITests.swift; sourceTree = "<group>"; };
 		46EF0C8C1E7517340021BCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EF0C981E75181C0021BCF2 /* clavamday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clavamday.png; sourceTree = "<group>"; };
+		46EF0C991E75181C0021BCF2 /* celebrate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = celebrate.png; sourceTree = "<group>"; };
+		46EF0C9A1E75181C0021BCF2 /* bgtop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgtop.png; sourceTree = "<group>"; };
+		46EF0C9B1E75181C0021BCF2 /* bgbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgbottom.png; sourceTree = "<group>"; };
+		46EF0C9C1E75181C0021BCF2 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
+		46EF0CA31E7522860021BCF2 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		58B90B6F22E122EE4D9643DA /* Pods-Clavam day App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day App/Pods-Clavam day App.debug.xcconfig"; sourceTree = "<group>"; };
+		7CB0E0C8AC72D5E9F700199B /* Pods-Clavam day AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day AppUITests/Pods-Clavam day AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82CC584401B17F8BA513E8FE /* Pods-Clavam day App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day App/Pods-Clavam day App.release.xcconfig"; sourceTree = "<group>"; };
+		D48F5A8D74D106FC1D91EC8B /* Pods_Clavam_day_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clavam_day_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D964E232C9E853082D5D9451 /* Pods-Clavam day AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day AppTests/Pods-Clavam day AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB3C124F1AFBFD29AAF75956 /* Pods-Clavam day AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clavam day AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clavam day AppTests/Pods-Clavam day AppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466F74AB1E7B077600D768E7 /* AVFoundation.framework in Frameworks */,
+				466F74AC1E7B077600D768E7 /* AVKit.framework in Frameworks */,
+				80D420386857DBA00907CE46 /* Pods_Clavam_day_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA64FB11FFC77299D7AC0A73 /* Pods_Clavam_day_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +107,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C2B0923FE86A8F18848489 /* Pods_Clavam_day_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466F74A81E7B077600D768E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				466F74A91E7B077600D768E7 /* AVFoundation.framework */,
+				466F74AA1E7B077600D768E7 /* AVKit.framework */,
+				2EAC6D931937C60B58A7BCD2 /* Pods_Clavam_day_App.framework */,
+				D48F5A8D74D106FC1D91EC8B /* Pods_Clavam_day_AppTests.framework */,
+				07CE9329AA1CA07E17B130ED /* Pods_Clavam_day_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46EF0C5B1E7517320021BCF2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				46EF0C7E1E7517340021BCF2 /* Clavam day AppTests */,
 				46EF0C891E7517340021BCF2 /* Clavam day AppUITests */,
 				46EF0C651E7517340021BCF2 /* Products */,
+				466F74A81E7B077600D768E7 /* Frameworks */,
+				B2D4FB219C9E80FBA69BF8A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +151,17 @@
 		46EF0C661E7517340021BCF2 /* Clavam day App */ = {
 			isa = PBXGroup;
 			children = (
+				46B6ECEA1E7B973600458C4B /* GoogleService-Info.plist */,
+				46EF0CA21E7518240021BCF2 /* Images */,
 				46EF0C671E7517340021BCF2 /* AppDelegate.swift */,
 				46EF0C691E7517340021BCF2 /* ViewController.swift */,
+				46C86CDA1E7CE87B00B33042 /* LoginViewController.swift */,
 				46EF0C6B1E7517340021BCF2 /* Main.storyboard */,
 				46EF0C711E7517340021BCF2 /* Assets.xcassets */,
 				46EF0C731E7517340021BCF2 /* LaunchScreen.storyboard */,
 				46EF0C761E7517340021BCF2 /* Info.plist */,
 				46EF0C6E1E7517340021BCF2 /* Clavam_day_App.xcdatamodeld */,
+				46EF0CA31E7522860021BCF2 /* CollectionViewController.swift */,
 			);
 			path = "Clavam day App";
 			sourceTree = "<group>";
@@ -128,6 +184,31 @@
 			path = "Clavam day AppUITests";
 			sourceTree = "<group>";
 		};
+		46EF0CA21E7518240021BCF2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				46EF0C981E75181C0021BCF2 /* clavamday.png */,
+				46EF0C991E75181C0021BCF2 /* celebrate.png */,
+				46EF0C9A1E75181C0021BCF2 /* bgtop.png */,
+				46EF0C9B1E75181C0021BCF2 /* bgbottom.png */,
+				46EF0C9C1E75181C0021BCF2 /* app.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B2D4FB219C9E80FBA69BF8A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58B90B6F22E122EE4D9643DA /* Pods-Clavam day App.debug.xcconfig */,
+				82CC584401B17F8BA513E8FE /* Pods-Clavam day App.release.xcconfig */,
+				D964E232C9E853082D5D9451 /* Pods-Clavam day AppTests.debug.xcconfig */,
+				EB3C124F1AFBFD29AAF75956 /* Pods-Clavam day AppTests.release.xcconfig */,
+				298958F486CBF57C03D41950 /* Pods-Clavam day AppUITests.debug.xcconfig */,
+				7CB0E0C8AC72D5E9F700199B /* Pods-Clavam day AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46EF0C8F1E7517340021BCF2 /* Build configuration list for PBXNativeTarget "Clavam day App" */;
 			buildPhases = (
+				914264711E6BA84D3FEF21AA /* [CP] Check Pods Manifest.lock */,
 				46EF0C601E7517320021BCF2 /* Sources */,
 				46EF0C611E7517320021BCF2 /* Frameworks */,
 				46EF0C621E7517320021BCF2 /* Resources */,
+				BC7DED0F375738F346C6BFEC /* [CP] Embed Pods Frameworks */,
+				356D0285743E35994C8B1E2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46EF0C921E7517340021BCF2 /* Build configuration list for PBXNativeTarget "Clavam day AppTests" */;
 			buildPhases = (
+				D4D05C33971CB3B6EEFE7D92 /* [CP] Check Pods Manifest.lock */,
 				46EF0C771E7517340021BCF2 /* Sources */,
 				46EF0C781E7517340021BCF2 /* Frameworks */,
 				46EF0C791E7517340021BCF2 /* Resources */,
+				1E2DCEFB5306F036DE687314 /* [CP] Embed Pods Frameworks */,
+				3F0F23442C5D01B3F8F1BD97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46EF0C951E7517340021BCF2 /* Build configuration list for PBXNativeTarget "Clavam day AppUITests" */;
 			buildPhases = (
+				15B81CCB966C1B9F99BC7C44 /* [CP] Check Pods Manifest.lock */,
 				46EF0C821E7517340021BCF2 /* Sources */,
 				46EF0C831E7517340021BCF2 /* Frameworks */,
 				46EF0C841E7517340021BCF2 /* Resources */,
+				11A761CB1AC814EFE6B58C3D /* [CP] Embed Pods Frameworks */,
+				1CAF0A2152B13671A42CAE7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +286,7 @@
 				TargetAttributes = {
 					46EF0C631E7517320021BCF2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DQZ65E4W8H;
 						ProvisioningStyle = Automatic;
 					};
 					46EF0C7A1E7517340021BCF2 = {
@@ -235,8 +326,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B6ECEB1E7B973600458C4B /* GoogleService-Info.plist in Resources */,
+				46EF0C9F1E75181C0021BCF2 /* bgtop.png in Resources */,
+				46EF0CA01E75181C0021BCF2 /* bgbottom.png in Resources */,
+				46EF0C9E1E75181C0021BCF2 /* celebrate.png in Resources */,
+				46EF0CA11E75181C0021BCF2 /* app.png in Resources */,
 				46EF0C751E7517340021BCF2 /* LaunchScreen.storyboard in Resources */,
 				46EF0C721E7517340021BCF2 /* Assets.xcassets in Resources */,
+				46EF0C9D1E75181C0021BCF2 /* clavamday.png in Resources */,
 				46EF0C6D1E7517340021BCF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +354,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11A761CB1AC814EFE6B58C3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day AppUITests/Pods-Clavam day AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15B81CCB966C1B9F99BC7C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1CAF0A2152B13671A42CAE7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day AppUITests/Pods-Clavam day AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E2DCEFB5306F036DE687314 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day AppTests/Pods-Clavam day AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		356D0285743E35994C8B1E2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day App/Pods-Clavam day App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0F23442C5D01B3F8F1BD97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day AppTests/Pods-Clavam day AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		914264711E6BA84D3FEF21AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7DED0F375738F346C6BFEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clavam day App/Pods-Clavam day App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D05C33971CB3B6EEFE7D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46EF0C601E7517320021BCF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EF0CA41E7522860021BCF2 /* CollectionViewController.swift in Sources */,
 				46EF0C6A1E7517340021BCF2 /* ViewController.swift in Sources */,
 				46EF0C701E7517340021BCF2 /* Clavam_day_App.xcdatamodeld in Sources */,
+				46C86CDB1E7CE87B00B33042 /* LoginViewController.swift in Sources */,
 				46EF0C681E7517340021BCF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C86CDC1E7CEB3400B33042 /* LoginViewController.swift in Sources */,
 				46EF0C801E7517340021BCF2 /* Clavam_day_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,8 +652,10 @@
 		};
 		46EF0C901E7517340021BCF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B90B6F22E122EE4D9643DA /* Pods-Clavam day App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DQZ65E4W8H;
 				INFOPLIST_FILE = "Clavam day App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebreaker.Clavam-day-App";
@@ -426,8 +666,10 @@
 		};
 		46EF0C911E7517340021BCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CC584401B17F8BA513E8FE /* Pods-Clavam day App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DQZ65E4W8H;
 				INFOPLIST_FILE = "Clavam day App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebreaker.Clavam-day-App";
@@ -438,6 +680,7 @@
 		};
 		46EF0C931E7517340021BCF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D964E232C9E853082D5D9451 /* Pods-Clavam day AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +695,7 @@
 		};
 		46EF0C941E7517340021BCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3C124F1AFBFD29AAF75956 /* Pods-Clavam day AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +710,7 @@
 		};
 		46EF0C961E7517340021BCF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298958F486CBF57C03D41950 /* Pods-Clavam day AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Clavam day AppUITests/Info.plist";
@@ -479,6 +724,7 @@
 		};
 		46EF0C971E7517340021BCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB0E0C8AC72D5E9F700199B /* Pods-Clavam day AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Clavam day AppUITests/Info.plist";
@@ -509,6 +755,7 @@
 				46EF0C911E7517340021BCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46EF0C921E7517340021BCF2 /* Build configuration list for PBXNativeTarget "Clavam day AppTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +764,7 @@
 				46EF0C941E7517340021BCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46EF0C951E7517340021BCF2 /* Build configuration list for PBXNativeTarget "Clavam day AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +773,7 @@
 				46EF0C971E7517340021BCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

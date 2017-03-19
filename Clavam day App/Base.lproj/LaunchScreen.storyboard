@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,10 +18,74 @@
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="fLW-Ui-u68">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgtop.png" translatesAutoresizingMaskIntoConstraints="NO" id="6T1-eT-vw4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="Uan-a3-UzP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="91" id="Wei-cv-Zoa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aky-Jg-uAZ" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="91" width="375" height="317.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celebrate.png" translatesAutoresizingMaskIntoConstraints="NO" id="anO-7j-QEg">
+                                        <rect key="frame" x="45.5" y="37" width="284" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="Czh-JQ-aek"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app.png" translatesAutoresizingMaskIntoConstraints="NO" id="MbS-oh-ZGX">
+                                        <rect key="frame" x="112.5" y="211" width="150" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Nqc-YQ-pK2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clavamday.png" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-1G-DbZ">
+                                        <rect key="frame" x="37.5" y="120" width="300" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="4og-rU-HnQ"/>
+                                            <constraint firstAttribute="width" constant="300" id="sD7-Fg-rIc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ifS-1G-DbZ" firstAttribute="centerX" secondItem="Aky-Jg-uAZ" secondAttribute="centerX" id="7Mg-ts-P6f"/>
+                                    <constraint firstAttribute="width" secondItem="Aky-Jg-uAZ" secondAttribute="height" multiplier="207:175" id="NsZ-yb-Ws7"/>
+                                    <constraint firstItem="MbS-oh-ZGX" firstAttribute="centerX" secondItem="Aky-Jg-uAZ" secondAttribute="centerX" id="b7a-9K-dBz"/>
+                                    <constraint firstItem="ifS-1G-DbZ" firstAttribute="top" secondItem="anO-7j-QEg" secondAttribute="bottom" constant="18" id="c5j-CN-B9P"/>
+                                    <constraint firstItem="anO-7j-QEg" firstAttribute="centerX" secondItem="Aky-Jg-uAZ" secondAttribute="centerX" id="cux-Jc-pDG"/>
+                                    <constraint firstItem="anO-7j-QEg" firstAttribute="top" secondItem="Aky-Jg-uAZ" secondAttribute="top" constant="37" id="mdV-Bn-2ki"/>
+                                    <constraint firstItem="MbS-oh-ZGX" firstAttribute="top" secondItem="ifS-1G-DbZ" secondAttribute="bottom" constant="30" id="nfQ-c8-gie"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzc-Nb-2qN" userLabel="BottonView">
+                                <rect key="frame" x="0.0" y="469.5" width="375" height="197.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgbottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="dnA-4u-MER">
+                                        <rect key="frame" x="-6" y="-8" width="373" height="223"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yzc-Nb-2qN" firstAttribute="top" secondItem="Aky-Jg-uAZ" secondAttribute="bottom" constant="60.5" id="N37-j2-yhl"/>
+                            <constraint firstItem="Aky-Jg-uAZ" firstAttribute="top" secondItem="6T1-eT-vw4" secondAttribute="bottom" id="Wha-cD-ZEQ"/>
+                            <constraint firstItem="6T1-eT-vw4" firstAttribute="top" secondItem="fLW-Ui-u68" secondAttribute="top" id="aRt-r5-HcA"/>
+                            <constraint firstAttribute="trailing" secondItem="yzc-Nb-2qN" secondAttribute="trailing" id="loD-Zu-avh"/>
+                            <constraint firstItem="6T1-eT-vw4" firstAttribute="leading" secondItem="fLW-Ui-u68" secondAttribute="leading" id="mum-75-bbd"/>
+                            <constraint firstAttribute="trailing" secondItem="Aky-Jg-uAZ" secondAttribute="trailing" id="pfr-tF-nJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="6T1-eT-vw4" secondAttribute="trailing" id="tZJ-sV-Ldl"/>
+                            <constraint firstItem="Aky-Jg-uAZ" firstAttribute="leading" secondItem="fLW-Ui-u68" secondAttribute="leading" id="ucs-gD-IkH"/>
+                            <constraint firstItem="yzc-Nb-2qN" firstAttribute="leading" secondItem="fLW-Ui-u68" secondAttribute="leading" id="zf3-CO-hlA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +93,11 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app.png" width="150" height="97"/>
+        <image name="bgbottom.png" width="1920" height="223"/>
+        <image name="bgtop.png" width="1920" height="147"/>
+        <image name="celebrate.png" width="284" height="73"/>
+        <image name="clavamday.png" width="1122" height="152"/>
+    </resources>
 </document>

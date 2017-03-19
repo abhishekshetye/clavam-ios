@@ -1,0 +1,6 @@
+framework module Pods_Clavam_day_AppUITests {
+  umbrella header "Pods-Clavam day AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

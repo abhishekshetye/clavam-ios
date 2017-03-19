@@ -1,0 +1,6 @@
+framework module Pods_Clavam_day_App {
+  umbrella header "Pods-Clavam day App-umbrella.h"
+
+  export *
+  module * { export * }
+}
