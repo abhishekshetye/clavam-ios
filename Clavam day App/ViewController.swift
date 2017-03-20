@@ -46,8 +46,8 @@ class ViewController: UIViewController {
             secondButton.setTitle(preferences.string(forKey: "SN"), for: UIControlState.normal)
         }
 
-//        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-//        UIDevice.current.setValue(value, forKey: "orientation")
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
     
     var currentLevel: Int = 1

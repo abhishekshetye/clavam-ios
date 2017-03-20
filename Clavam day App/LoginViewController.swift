@@ -22,6 +22,9 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         let preferences = UserDefaults.standard
         
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
         if preferences.object(forKey: "OPENED") == nil {
             preferences.set(1, forKey: "OPENED")
         } else {
