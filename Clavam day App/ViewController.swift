@@ -154,9 +154,9 @@ class ViewController: UIViewController {
     
     @IBAction func playit(_ sender: Any) { //second one
         
-        let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
         let preferences = UserDefaults.standard
         var url: String?
         if preferences.object(forKey: "SP") == nil {
@@ -179,12 +179,18 @@ class ViewController: UIViewController {
         } else {
             print("FILE NOT AVAILABLE")
             //DOWNLOAD IT
+            if(!verifyUrl(urlString: url)){
+                let alert = UIAlertController(title: "Error", message: "Something went wrong. Please try again later.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return;
+            }
             let downloadsPath = try! FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
             let fileURL = downloadsPath?.appendingPathComponent((myUrl?.lastPathComponent)!)
             print(myUrl?.lastPathComponent ?? "default" )
             
             if let URL = NSURL(string: url!) {
-                Downloader.load(url: URL as URL, to: fileURL!, completion: {
+                Downloader.load(url: URL as URL, to: fileURL!, inst: self, completion: {
                     //code here
                 })
             }
@@ -195,9 +201,9 @@ class ViewController: UIViewController {
     
     @IBAction func redDownloadButtonClick(_ sender: Any) { //first one
         
-        let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
         let preferences = UserDefaults.standard
         var url: String?
         if preferences.object(forKey: "FP") == nil {
@@ -225,7 +231,7 @@ class ViewController: UIViewController {
             print(myUrl?.lastPathComponent ?? "default" )
             
             if let URL = NSURL(string: url!) {
-                Downloader.load(url: URL as URL, to: fileURL!, completion: {
+                Downloader.load(url: URL as URL, to: fileURL!, inst: self, completion: {
                     //code here
                 })
             }
@@ -234,12 +240,21 @@ class ViewController: UIViewController {
     }
     
     
+    func verifyUrl (urlString: String?) -> Bool {
+        //Check for nil
+        if let urlString = urlString {
+            // create NSURL instance
+            if let url = NSURL(string: urlString) {
+                // check if your application can open the NSURL instance
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
+    }
     
     @IBAction func downloadClick(_ sender: Any) { //first one
         
-        let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+       
         let preferences = UserDefaults.standard
         var url: String?
         if preferences.object(forKey: "FP") == nil {
@@ -262,13 +277,18 @@ class ViewController: UIViewController {
         } else {
             print("FILE NOT AVAILABLE")
             //DOWNLOAD IT
-            
+            if(!verifyUrl(urlString: url)){
+                let alert = UIAlertController(title: "Error", message: "Something went wrong. Please try again later.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return;
+            }
             let downloadsPath = try! FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
             let fileURL = downloadsPath?.appendingPathComponent((myUrl?.lastPathComponent)!)
             print(myUrl?.lastPathComponent ?? "default" )
             
             if let URL = NSURL(string: url!) {
-                Downloader.load(url: URL as URL, to: fileURL!, completion: {
+                Downloader.load(url: URL as URL, to: fileURL!, inst: self, completion: {
                     //code here
                 })
             }
@@ -308,12 +328,17 @@ class ViewController: UIViewController {
     }
     
     class Downloader {
-        class func load(url: URL, to localUrl: URL, completion: @escaping () -> ()) {
+        
+        
+        class func load(url: URL, to localUrl: URL, inst: ViewController, completion: @escaping () -> ()) {
             
             let sessionConfig = URLSessionConfiguration.default
             let session = URLSession(configuration: sessionConfig)
             let request = try! URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData)
-            
+           
+            let alert = UIAlertController(title: "Downloading", message: "The video is downloading.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            inst.present(alert, animated: true, completion: nil)
             let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
                 if let tempLocalUrl = tempLocalUrl, error == nil {
                     // Success
